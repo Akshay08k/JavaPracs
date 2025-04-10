@@ -1,0 +1,55 @@
+//---------------------------
+	Program:1
+//---------------------------
+Classes & Interface:
+Interface Rental → calculateRent(int days)
+Base Class Vehicle → Attributes: brand, model, rentalPricePerDay
+Child Class Car → Implements Rental, calculates rent.
+Exception InvalidDaysException → Thrown if days are negative.*/
+//---------------------------
+	Program:2
+//---------------------------
+implementing a simple student result calculation system. Below is the definition of the required components:
+
+1)Interface Exam
+Contains a method percent_cal(), which calculates the percentage of marks obtained by a student.
+
+2)Class Student (Base Class)
+Contains attributes: name, rollno, mark1, and mark2.
+Includes a parameterized constructor to initialize these attributes.
+
+3)Class Result (Child Class)
+Extends Student and implements Exam interface.
+Implements the percent_cal() method to compute the percentage.
+Throws a user-defined exception if the percentage is below a certain threshold (e.g., failing criteria).
+User-Defined Exception
+A custom exception class (e.g., FailException) to handle cases where a student’s percentage is below the passing mark.
+
+//---------------------------
+Set 1: Banking System (User-Defined Exception for Low Balance)
+Interface Bank → Contains method check_balance().
+Class Account (Base Class) → Attributes: accountHolder, accountNumber, balance.
+Class SavingsAccount (Child Class) → Extends Account, implements Bank.
+User-Defined Exception: LowBalanceException if balance < ₹500.
+//---------------------------
+
+Set 2: Employee Salary Validation
+Interface Salary → Contains method calculateSalary().
+Class Employee (Base Class) → Attributes: name, id, basicSalary, bonus.
+Class Payroll (Child Class) → Extends Employee, implements Salary.
+User-Defined Exception: LowSalaryException if salary < ₹10,000.
+//---------------------------
+
+Set 3: Vehicle Speed Monitoring System
+Interface SpeedMonitor → Contains method check_speed().
+Class Vehicle (Base Class) → Attributes: model, registrationNumber, speed.
+Class Car (Child Class) → Extends Vehicle, implements SpeedMonitor.
+User-Defined Exception: OverSpeedException if speed > 120 km/h.
+//---------------------------
+
+Set 4: Library Management System
+Interface Library → Contains method issue_book().
+Class Book (Base Class) → Attributes: title, author, isbn, availableCopies.
+Class Member (Child Class) → Extends Book, implements Library.
+User-Defined Exception: BookNotAvailableException if available copies = 0.
+//---------------------------
